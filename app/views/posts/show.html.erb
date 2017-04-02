@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>DATE:</strong>
+  <%= @post.created_at.to_date %>
+</p>
+<div class="jumbotron">
+<p>
+  <strong>TITLE:</strong>
+  <%= @post.title %>
+</p>
+</div>
+<div class="jumbotron">
+<p>
+  <strong>BODY:</strong>
+  <%= @post.body %>
+</p>
+</div>
+
+<%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-info' %> |
+<%= link_to 'Back', posts_path, class: 'btn btn-danger' %>
